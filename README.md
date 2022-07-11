@@ -7,7 +7,7 @@
 - main.py: Parse the arguments and train the model or test the saved model.
 - model.py: BERT model with a linear tagger layer.
 - trainer.py: Load dataset and pre-process it with data loader. Load model and initialize the optimizer and loss function. Train the model and evaluate the model with dev and test dataset.
-- utils.py: Split train, dev and test datset. Load tokenizer and convert the pre-processed dataset into the form of BERT input. Report classification results into the form of precision, recall and f1-score.
+- utils.py: Split train, dev and test dataset. Load tokenizer and convert the pre-processed dataset into the form of BERT input. Report classification results in the form of precision, recall and f1-score.
 
 # Prerequisites
 - argparse
