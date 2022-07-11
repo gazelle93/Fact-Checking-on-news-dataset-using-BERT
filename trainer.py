@@ -12,6 +12,7 @@ import numpy as np
 from datetime import datetime
 import torch
 from dataset_preprocess import revise_dataset
+import os
 
 
 def train(args):
@@ -91,6 +92,8 @@ def train(args):
         # Save model if this is the best model based on the development loss (this criteria can be f1-score)
         if best_dev_loss > dev_loss/len(dev_dataset_loader):
             print("---Save the current best model.")
+            if not os.path.exists('saved_models'):
+                os.makedirs('saved_models')
             best_dev_loss = dev_loss/len(dev_dataset_loader)
 
             if args.strict == True:
