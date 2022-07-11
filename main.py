@@ -13,7 +13,6 @@ if __name__ == "__main__":
     parser.add_argument("--pad_len", default=256, help="Padding length.")
     parser.add_argument("--learning_rate", default=1e-5, help="Learning rate.")
     parser.add_argument("--num_epochs", default=5, help="Number of epochs for training.")
-    parser.add_argument("--model_path", default="bert-base-uncased", help="Pre-trained Language Model. (bert-base-uncased, digitalepidemiologylab/covid-twitter-bert)")
     parser.add_argument("--strict", default=True, help="Selection of label pre-processing method (True: Strict, False: Lenient).")
     parser.add_argument("--ignore", default=True, help="Ignore the rare cases (True: Ignore, False: Use all).")
     parser.add_argument("--ignore_num", default=5, help="Ignore rare cases if the occurrence is less than this number.")
