@@ -31,7 +31,7 @@
 - ignore_num(int, defaults to 5): Ignore rare cases if the occurrence is less than this number.
 - add_author(defaults to True): Adding author to the text (True: author + text, False: text).
 - training(defaults to True): True for training, False for observing the experiment result on test dataset of the saved model.
-- saved_model(defaults to "model_20220709_220851_w_s_at_256"): 
+- saved_model(defaults to "model_20220709_220851_w_s_at_256"): Use the saved model if test is the objectve of the current task.
 - language_model(str, defaults to "bert-base-uncased"): Pre-trained Language Model. (bert-base-uncased, digitalepidemiologylab/covid-twitter-bert)
 
 # References
