@@ -1,7 +1,10 @@
 import argparse
+from utils import set_seed
 from trainer import train, saved_model_result
 
 def main(args):
+    set_seed(args)
+
     if args.training == True:
         train(args)
     else:
@@ -9,6 +12,7 @@ def main(args):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
+    parser.add_argument("--seed", default=777, help="Seed for reproductibility.")
     parser.add_argument("--batch_size", default=1, help="Batch size.")
     parser.add_argument("--pad_len", default=256, help="Padding length.")
     parser.add_argument("--learning_rate", default=1e-5, help="Learning rate.")
