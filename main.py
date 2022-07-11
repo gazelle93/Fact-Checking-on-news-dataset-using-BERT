@@ -19,7 +19,7 @@ if __name__ == "__main__":
     parser.add_argument("--ignore_num", default=5, help="Ignore rare cases if the occurrence is less than this number.")
     parser.add_argument("--add_author", default=True, help="Adding author to the text (True: author + text, False: text).")
     parser.add_argument("--training", default=True, help="True for training, False for observing the experiment result on test dataset of the saved model.")
-    parser.add_argument("--saved_model", default="model_20220710_050237_w_l_at_256", help="Name of saved model. (The pre-processing method, input representation and padding length should be match with the other arguments)")
+    parser.add_argument("--saved_model", default="model_20220709_220851_w_s_at_256", help="Name of saved model. (The pre-processing method, input representation and padding length should be match with the other arguments)")
     parser.add_argument("--language_model", default="bert-base-uncased", help="Selection of the language model (BERT).")
     args = parser.parse_args()
 
